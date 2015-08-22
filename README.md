@@ -37,10 +37,27 @@
 
   - Use AJAX to send request to the server from the client.
   - Hitting the GET/POST route without refreshing the page.
+  ```
+  $("#eyed").on("click", function(e){
+    e.preventDefault
+  })
+  ```
 
 4. Receive the request on the server (process the request)
 
   - Server sends response to AJAX.
+  ```
+  $("#eyed").on("click", function(e){
+    e.preventDefault
+
+    $.ajax({
+      url:      url,      // Which Sinatra route to hit
+      method:   method,   // GET/POST/PUT/DELETE, to specify the route you are hitting.
+      data:     data,     // Data being sent to the route, if it's a GET route, we don't need this, because we are not sending in any data.
+      dataType  "json"    // dataType expected from server
+    })
+  })
+  ```
 
 5. Send back the response to the client
 6. Interpret response with javascript
