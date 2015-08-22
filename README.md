@@ -8,7 +8,12 @@
 - With AJAX
 ![Alt text](/ajax.png "With Ajax")
 
-##Seven Steps:
+####Things you will learn today
+  - A very basic AJAX concept
+  - Steps to do a basic AJAX call
+  - Don't worry if you cannot follow thru today, you will learn from your teacher(s) again and you can always refer to this readme again.
+
+####Seven Steps:
 1. Trigger the event
 
   - on click of a button
