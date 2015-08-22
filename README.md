@@ -19,7 +19,7 @@
   - on click of a button
   ```
   $("#eyed").on("click", function(e){
-  e.preventDefault
+
   })
   ```
 
@@ -27,6 +27,11 @@
 
   - Prevent traditional get/post/put/delete request
   - For example, if Facebook like button will not refresh the whole page, instead, it prevent default and go into the AJAX process.
+  ```
+  $("#eyed").on("click", function(e){
+    e.preventDefault
+  })
+  ```
 
 3. Send the request
 
