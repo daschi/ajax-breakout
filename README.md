@@ -1,5 +1,13 @@
 ###Ajax Breakout
 
+- Ajax, short for asynchronous JavaScript and XML, is a group of interrelated Web development techniques used on the client-side to create asynchronous Web applications.
+
+- Without Ajax
+![Alt text](/no-ajax.png "Without Ajax")
+
+- With Ajax
+![Alt text](/with-ajax.png "With Ajax")
+
 ##Seven Steps:
 1. Trigger the event
 2. Stop the default event
