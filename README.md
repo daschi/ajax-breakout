@@ -6,7 +6,7 @@
 ![Alt text](/no-ajax.png "Without Ajax")
 
 - With Ajax
-![Alt text](/with-ajax.png "With Ajax")
+![Alt text](/ajax.png "With Ajax")
 
 ##Seven Steps:
 1. Trigger the event
