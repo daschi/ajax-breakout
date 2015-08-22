@@ -1,4 +1,4 @@
-###Ajax Breakout
+##Ajax Breakout
 
 - Ajax, short for asynchronous JavaScript and XML, is a group of interrelated Web development techniques used on the client-side to create asynchronous Web applications.
 
@@ -11,11 +11,11 @@
 ##Seven Steps:
 1. Trigger the event
 
-- on click of a button
+  - on click of a button
 
 2. Stop the default event
 
-- Prevent traditional get/post/put/delete request
+  - Prevent traditional get/post/put/delete request
 
 3. Send the request
 4. Receive the request on the server (process the request)
