@@ -60,5 +60,22 @@
   ```
 
 5. Send back the response to the client
+
+  ```
+  $("#eyed").on("click", function(e){
+    e.preventDefault
+
+    var request = $.ajax({
+      url:      url,      // Which Sinatra route to hit
+      method:   method,   // GET/POST/PUT/DELETE, to specify the route you are hitting.
+      data:     data,     // Data being sent to the route, if it's a GET route, we don't need this, because we are not sending in any data.
+      dataType  "json"    // dataType expected from server
+    })
+
+    request.done(){
+
+  }
+  })
+  ```
 6. Interpret response with javascript
 7. Change the dom
