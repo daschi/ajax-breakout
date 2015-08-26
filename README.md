@@ -63,7 +63,7 @@
 
   ```
   $("#eyed").on("click", function(e){
-    e.preventDefault
+    e.preventDefault();
 
     var request = $.ajax({
       url:      url,      // Which Sinatra route to hit
@@ -84,7 +84,7 @@
 6. Interpret response with javascript
   ```
   $("#eyed").on("click", function(e){
-    e.preventDefault
+    e.preventDefault();
 
     var request = $.ajax({
       url:      url,      // Which Sinatra route to hit
@@ -105,7 +105,7 @@
 7. Change the dom
   ```
   $("#eyed").on("click", function(e){
-    e.preventDefault
+    e.preventDefault();
 
     var request = $.ajax({
       url:      url,      // Which Sinatra route to hit
