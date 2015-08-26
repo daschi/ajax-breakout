@@ -70,11 +70,11 @@
       method:   method,   // GET/POST/PUT/DELETE, to specify the route you are hitting.
       data:     data,     // Data being sent to the route, if it's a GET route, we don't need this, because we are not sending in any data.
       dataType  "json"    // dataType expected from server
-    })
+    });
 
     request.done(function(responseData){
     
-    })
+    });
   
     request.fail(function(responseData){
      console.log("Failed, FIX IT!")
@@ -91,11 +91,11 @@
       method:   method,   // GET/POST/PUT/DELETE, to specify the route you are hitting.
       data:     data,     // Data being sent to the route, if it's a GET route, we don't need this, because we are not sending in any data.
       dataType  "json"    // dataType expected from server
-    })
+    });
 
-    request.done(function(responseData)){
+    request.done(function(responseData){
     console.log(responseData); // You can see the responseData in console to decide how you want to maniplate the DOM
-    }
+    });
   
     request.fail(function(responseData){
      console.log("Failed, FIX IT!")
@@ -112,12 +112,12 @@
       method:   method,   // GET/POST/PUT/DELETE, to specify the route you are hitting.
       data:     data,     // Data being sent to the route, if it's a GET route, we don't need this, because we are not sending in any data.
       dataType  "json"    // dataType expected from server
-    })
+    });
 
-    request.done(function(responseData)){
+    request.done(function(responseData){
     console.log(responseData); // You can see the responseData in console to decide how you want to maniplate the DOM
     $('eyed').innerHTML(responseData);   // Depends on how you want to manuiplate the DOM
-    }
+    });
   
     request.fail(function(responseData){
      console.log("Failed, FIX IT!")
