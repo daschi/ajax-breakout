@@ -29,7 +29,7 @@
   - For example, if Facebook like button will not refresh the whole page, instead, it prevent default and go into the AJAX process.
   ```
   $("#eyed").on("click", function(e){
-    e.preventDefault
+    e.preventDefault();
   })
   ```
 
@@ -39,7 +39,7 @@
   - Hitting the GET/POST route without refreshing the page.
   ```
   $("#eyed").on("click", function(e){
-    e.preventDefault
+    e.preventDefault();
   })
   ```
 
@@ -48,7 +48,7 @@
   - Server sends response to AJAX.
   ```
   $("#eyed").on("click", function(e){
-    e.preventDefault
+    e.preventDefault();
 
     $.ajax({
       url:      url,      // Which Sinatra route to hit
@@ -72,10 +72,56 @@
       dataType  "json"    // dataType expected from server
     })
 
-    request.done(){
-
-  }
+    request.done(function(responseData){
+    
+    })
+  
+    request.fail(function(responseData){
+     console.log("Failed, FIX IT!")
+    })
   })
   ```
 6. Interpret response with javascript
+  ```
+  $("#eyed").on("click", function(e){
+    e.preventDefault
+
+    var request = $.ajax({
+      url:      url,      // Which Sinatra route to hit
+      method:   method,   // GET/POST/PUT/DELETE, to specify the route you are hitting.
+      data:     data,     // Data being sent to the route, if it's a GET route, we don't need this, because we are not sending in any data.
+      dataType  "json"    // dataType expected from server
+    })
+
+    request.done(function(responseData)){
+    console.log(responseData); // You can see the responseData in console to decide how you want to maniplate the DOM
+    }
+  
+    request.fail(function(responseData){
+     console.log("Failed, FIX IT!")
+    })
+  })
+  ```
 7. Change the dom
+  ```
+  $("#eyed").on("click", function(e){
+    e.preventDefault
+
+    var request = $.ajax({
+      url:      url,      // Which Sinatra route to hit
+      method:   method,   // GET/POST/PUT/DELETE, to specify the route you are hitting.
+      data:     data,     // Data being sent to the route, if it's a GET route, we don't need this, because we are not sending in any data.
+      dataType  "json"    // dataType expected from server
+    })
+
+    request.done(function(responseData)){
+    console.log(responseData); // You can see the responseData in console to decide how you want to maniplate the DOM
+    $('eyed').innerHTML(responseData);   // Depends on how you want to manuiplate the DOM
+    }
+  
+    request.fail(function(responseData){
+     console.log("Failed, FIX IT!")
+    })
+  })
+  ```
+
