@@ -94,7 +94,7 @@
     });
 
     request.done(function(responseData){
-    console.log(responseData); // You can see the responseData in console to decide how you want to maniplate the DOM
+      console.log(responseData); // You can see the responseData in console to decide how you want to maniplate the DOM
     });
   
     request.fail(function(responseData){
@@ -115,8 +115,8 @@
     });
 
     request.done(function(responseData){
-    console.log(responseData); // You can see the responseData in console to decide how you want to maniplate the DOM
-    $('eyed').innerHTML(responseData);   // Depends on how you want to manuiplate the DOM
+      console.log(responseData); // You can see the responseData in console to decide how you want to maniplate the DOM
+      $('eyed').innerHTML(responseData);   // Depends on how you want to manuiplate the DOM
     });
   
     request.fail(function(responseData){
